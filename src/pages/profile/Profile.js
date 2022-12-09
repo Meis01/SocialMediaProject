@@ -42,7 +42,7 @@ const Profile = () => {
 const json = await res.json();
 if(json.success)
 {
-    
+    console.log(token)
     window.alert(json.messages)
     setUserPosts(json.data.posts)
     console.log(json.data.posts)
