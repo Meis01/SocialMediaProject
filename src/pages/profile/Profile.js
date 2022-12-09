@@ -6,7 +6,7 @@ import Posts from '../../components/posts/Posts';
 
 const Profile = () => {
     
-    const [counter, setCounter] = useState(0);
+    
     const token = useContext(AuthContext);
     const {user} = useContext(AuthContext);
     const [userData, setUserData] = useState({
