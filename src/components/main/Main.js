@@ -9,7 +9,7 @@ const Main = (props) => {
         </div>
       
         <div className="children-2">
-          <h1>{props.title}</h1>
+          <h4>{props.title}</h4>
           {props.children}
         </div>
     </div>
