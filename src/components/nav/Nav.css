@@ -36,7 +36,7 @@
     width: fit-content;
 }
 a.active-link-color{
-    color: #5188ff;
+    color: #1d9bf0;
 }
 .link-color{
     color: #000;  
@@ -60,14 +60,14 @@ a.active-link-color{
  }
 
  a.active-link{
-    color: #5188ff;
+    color: #1d9bf0;
 }
 .link{
-    color: #5188ff;  
+    color: #1d9bf0;  
 }
 a{
     text-decoration: none !important;
-    color: #5188ff;
+    color: #1d9bf0;
 }
 .icon-text{
     margin-top: 15px;
@@ -78,7 +78,7 @@ a{
 }
 .icon-text:hover{
     background-color:#F3F4F5;
-    color: #5188ff;
+    color: #1d9bf0;
     text-decoration: none;   
     width: fit-content;
 }
