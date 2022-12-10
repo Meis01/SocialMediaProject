@@ -9,27 +9,24 @@ const Profile = () => {
     
     const token = useContext(AuthContext);
     const {user} = useContext(AuthContext);
-    const [userData, setUserData] = useState({
-        email:"",
-        password:"",
-       
-    });
     const [userPosts, setUserPosts] = useState([]);
-  const [image, setImage] = useState();
-  const [userProfile, setUserProfile] = useState({
+    const [image, setImage] = useState();
+    const [userProfile, setUserProfile] = useState({
     name:"",
     email:"",
-    
   });
+
   function handleChange(e) {
     setImage(URL.createObjectURL(e.target.files[0]));
   }
+
   const handleOnChange = (e) => {
     userProfile[e.target.name] = e.target.value;
     const updatedData = {...userProfile}
     updatedData[e.target.name] = e.target.value;
     setUserProfile(updatedData)
   };
+  //Tis function o display user posts at the bottom
   const getProfileData = async() =>  {
    const res = await fetch("http://ferasjobeir.com/api/users/me",{
     method: 'GET',
@@ -43,9 +40,13 @@ const json = await res.json();
 if(json.success)
 {
     console.log(token)
-    window.alert(json.messages)
+    console.log(json.data.content)
+    window.alert(json.content)
     setUserPosts(json.data.posts)
     console.log(json.data.posts)
+    userPosts.map((post,i)=>{
+     console.log(`user Posts:${post.content} `)
+    })
 }
   }
   useEffect(() => {
@@ -108,7 +109,7 @@ if(json.success)
                                 <label htmlFor="password_confirmation" className="mb-2">
                                     <small>New Password Confirmation</small>
                                 </label>
-                                <input onChange={handleOnChange} name="new_password_confirmation" type="password" id="password_confirmation" className="form-control"/>
+                                <input onChange={handleOnChange} name="password_confirmation" type="password" id="password_confirmation" className="form-control"/>
                             </div>
                             <div className="mb-3">
                                 <button type="submit" className="btn btn-primary">Update Profile</button>
