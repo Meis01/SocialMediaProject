@@ -26,7 +26,7 @@ const Profile = () => {
     updatedData[e.target.name] = e.target.value;
     setUserProfile(updatedData)
   };
-  //Tis function o display user posts at the bottom
+ 
   const getProfileData = async() =>  {
    const res = await fetch("http://ferasjobeir.com/api/users/me",{
     method: 'GET',
