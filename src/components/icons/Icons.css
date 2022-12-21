@@ -1,0 +1,30 @@
+
+/* .head, .headIcon {
+    background-color: rgb(132, 18, 18);
+    align-items: center;
+    display: flex;
+}
+.headIcon {
+    background-color: #f3f4f5;
+    border-radius: 35px;
+    font-size: small;
+    height: 35px;
+    justify-content: center;
+    margin-left: 5px;
+    width: 35px;
+}
+.icon-text {
+    margin-top: 15px;
+    padding: 15px 30px 15px 15px;
+    display: flex;
+    border-radius: 40px;
+    color: black;
+} */
+.icon-box{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-item{
+    margin-right: 5px;
+}

@@ -1,0 +1,18 @@
+.comments{
+    margin: 15px 15px 15px 55px; 
+}
+.comment{
+    display: flex;
+    margin-bottom: 8px;
+}
+.addcomment {
+    border-top: 1px solid #e5e6e7;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.comment img {
+    border-radius: 40px;
+    height: 40px;
+    margin-right: 15px;
+    width: 40px;
+}

@@ -18,3 +18,22 @@
     justify-content: space-around;
     margin-bottom: 6%;
 }
+.Register_logo__-jKtP {
+    margin: auto;
+    width: 100px;
+}
+.Register_register__csfwh {
+    background: #fdfdfd;
+    border: 1px solid #dadce0;
+    border-radius: 15px;
+}
+.container {
+    font-family: Poppins,sans-serif;
+    line-height: 1.5;
+}
+.form-field label {
+    font-size: 1.2em; 
+}
+.Register_title__QRiY2 {
+    font-weight: 600;
+}

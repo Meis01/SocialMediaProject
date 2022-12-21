@@ -11,8 +11,8 @@ import ListIcon from '@mui/icons-material/List';
 import ExploreIcon from '@mui/icons-material/Explore';
 
 const Nav = () => {
-    const {signOut} = useContext(AuthContext)
-const {token} = useContext(AuthContext);
+ /*    const {signOut} = useContext(AuthContext)
+const {token} = useContext(AuthContext); */
 const links = [
     {
         target:'/',
